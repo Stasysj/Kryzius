@@ -1,0 +1,35 @@
+.container {
+  padding-top: 200px;
+}
+
+.box {
+  margin: 0px auto;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  /* overflow: hidden; */
+  background-color: aquamarine;
+}
+.box::after {
+  content: " ";
+  position: absolute;
+  right: 50%;
+  top: 0px;
+  transform: rotate(45deg);
+  /* transform: translatey(-50%); */
+  height: 300px;
+  width: 1px;
+  background-color: blue;
+}
+.box::before {
+  content: "";
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  top: -50%;
+  transform: rotate(-45deg);
+  /* transform: translatey(-50%); */
+  height: 200%;
+  width: 1px;
+  background-color: rgb(255, 0, 0);
+}
